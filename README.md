@@ -68,6 +68,8 @@ ReLU networks are piecewise-affine: the input space is partitioned into convex p
 
 For small networks (width ≤ 8, depth ≤ 3), exact enumeration typically succeeds. Larger networks may exceed the region limit, in which case the boundary visualization falls back to matplotlib contours.
 
+(A small disclaimer: this network uses LeakyReLU, a modified version of ReLU! Oftentimes models using ReLU get stuck in local optima when training, which is something we don't want)
+
 ## Requirements
 
 - Python 3.10+
